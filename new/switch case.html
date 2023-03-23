@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="color"></div>
+
+
+<script>
+
+var num1 = parseInt(prompt("Enter the number you want to subtract/add/multiply or divide"));
+console.log(num1);
+
+var num2 = parseInt(prompt("Enter the number you want to subtract/add/multiply or divide with!"))
+console.log(num2);
+
+var method = prompt("enter any method");
+console.log(method);
+
+var result ;
+
+
+switch(method){
+
+ case "addition","add","sum":
+ result = num1 + num2;
+ break;
+ 
+ case "subtraction","minus","subtract" :
+ result = num1 - num2;
+ break; 
+ 
+ case "multiplication","multiply":
+ result = num1 * num2;
+ break;
+ 
+ case "division","divide":
+ result = num1 / num2;
+ break;
+ 
+default:
+alert("sorry, your input is invalid!")
+break;
+}
+
+document.getElementById("color").innerHTML=result;
+
+    </script>
+</body>
+</html>

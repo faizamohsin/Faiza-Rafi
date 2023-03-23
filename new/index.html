@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="color"></div>
+
+
+
+    <script>
+
+
+var b = parseInt(prompt("Marks obtained in Statistics out of 100"));
+
+var c = parseInt(prompt("Marks obtained in Accounting out of 100"));
+
+
+var sum =( b + c ) / 200 * 100 ;
+console.log(sum);
+document.getElementById('color').innerHTML= sum;
+
+
+if(sum > 60){
+    var d="You've succesfully passed the exam :)"
+    document.getElementById('color').innerHTML=d;
+}
+else{
+    var d=" sorry you failed :("
+    document.getElementById('color').innerHTML=d;
+}
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
